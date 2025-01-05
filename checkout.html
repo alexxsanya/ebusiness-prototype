@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-800">
+        <div class="container mx-auto w-4/5 px-8 py-3 flex flex-col sm:flex-row items-center justify-between">
+            <h1 class="text-orange-500 font-bold"><a href="./index.html">DesiLogo</a></h1>
+            <nav class="flex space-x-4">
+                <a href="./index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="./listing.html" class="text-gray-300 hover:text-white">Products</a>
+            </nav>
+            <div class="flex items-center space-x-4 hidden md:block">
+                <input type="text" placeholder="Search Products, Brands and Categories"
+                    class="bg-gray-700 text-white px-4 py-2 rounded xl:w-96">
+                <button class="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600">Search</button>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="./cart.html" class="text-gray-300 hover:text-white">User 🔒</a>
+                <a href="./cart.html" class="text-gray-300 hover:text-white">Cart 🛒</a>
+            </div>
+        </div>
+      </header>
+
+    <main class="container w-4/5 mx-auto px-4 py-8 grid lg:grid-cols-3 gap-8">
+        <section class="lg:col-span-2 space-y-6">
+            <div class="bg-gray-800 p-4 rounded">
+                <h2 class="text-lg font-bold">Customer Address</h2>
+                <p>Address Title | Address Line | City - Town | +256 7XXXXXXX</p>
+                <button class="text-orange-500 hover:text-orange-600 mt-2">Edit</button>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded">
+                <h2 class="text-lg font-bold">Delivery Details</h2>
+                <p>Product XXX Details</p>
+                <button class="text-orange-500 hover:text-orange-600 mt-2">Edit</button>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded">
+                <h2 class="text-lg font-bold">Payment Details</h2>
+                <p>Pay on Delivery (Pay with Mobile Money and Bank Cards)</p>
+                <button class="text-orange-500 hover:text-orange-600 mt-2">Edit</button>
+            </div>
+        </section>
+
+        <aside class="bg-gray-800 p-6 rounded space-y-6">
+            <h2 class="text-lg font-bold">Order Summary</h2>
+            <div class="flex justify-between">
+                <p>Item total (1)</p>
+                <p>$12.0</p>
+            </div>
+            <div class="flex justify-between">
+                <p>Delivery Fee</p>
+                <p>$7.0</p>
+            </div>
+            <div class="flex justify-between font-bold">
+                <p>Total</p>
+                <p>$19.0</p>
+            </div>
+            <div class="space-y-2">
+                <input type="text" placeholder="Enter coupon code"
+                    class="w-full bg-gray-700 text-white px-4 py-2 rounded">
+                <button class="w-full bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Apply Coupon</button>
+            </div>
+            <button class="w-full bg-orange-500 px-4 py-2 rounded hover:bg-orange-600">Confirm Order</button>
+            <p class="text-sm text-gray-400 mt-4">By proceeding, you are automatically accepting the Terms & Conditions</p>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 mt-8">
+      <div class="w-4/5 mx-auto ">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div>
+              <h3 class="font-semibold mb-2">Need Help?</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">Chat with us</a></li>
+                  <li><a href="#" class="text-gray-400">Help Center</a></li>
+                  <li><a href="#" class="text-gray-400">Contact us</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-2">About Desiwear</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">About us</a></li>
+                  <li><a href="#" class="text-gray-400">Cookie Notice</a></li>
+                  <li><a href="#" class="text-gray-400">Terms and Conditions</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-2">Payment Methods</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">Bitcoin</a></li>
+                  <li><a href="#" class="text-gray-400">Visa/Mastercard</a></li>
+                  <li><a href="#" class="text-gray-400">Cash</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-2">Policies</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">Return & Refund Policy</a></li>
+                  <li><a href="#" class="text-gray-400">Privacy Policy</a></li>
+                  <li><a href="#" class="text-gray-400">Dispute Resolution Policy</a></li>
+              </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Follow us</h3>
+            <ul class="space-y-1 text-sm">
+                <li><a href="#" class="text-gray-400">Twitter</a></li>
+                <li><a href="#" class="text-gray-400">Instagram</a></li>
+                <li><a href="#" class="text-gray-400">TikTok</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </footer>
+</body>
+
+</html>

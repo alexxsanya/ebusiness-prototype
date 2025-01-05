@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="bg-gray-800">
+        <div class="container mx-auto w-4/5 px-8 py-3 flex flex-col sm:flex-row items-center justify-between">
+            <h1 class="text-orange-500 font-bold"><a href="./index.html">DesiLogo</a></h1>
+            <nav class="flex space-x-4">
+                <a href="./index.html" class="text-gray-300 hover:text-white">Home</a>
+                <a href="./listing.html" class="text-gray-300 hover:text-white">Products</a>
+            </nav>
+            <div class="flex items-center space-x-4 hidden md:block">
+                <input type="text" placeholder="Search Products, Brands and Categories"
+                    class="bg-gray-700 text-white px-4 py-2 rounded xl:w-96">
+                <button class="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600">Search</button>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="./cart.html" class="text-gray-300 hover:text-white">User 🔒</a>
+                <a href="./cart.html" class="text-gray-300 hover:text-white">Cart 🛒</a>
+            </div>
+        </div>
+      </header>
+
+    <!-- Main Content -->
+    <main class="p-4 w-4/5 mx-auto">
+        <div class="flex flex-col gap-8">
+            <!-- Product Image and Info -->
+            <section class="w-full">
+              <div class="flex flex-col lg:flex-row justify-between">
+                <h1 class="text-2xl font-semibold mb-2">Product Title</h1>
+                <p class="text-2xl text-orange-500 font-bold mb-4">$12.0</p>  
+              </div>
+              <div class="flex flex-col xl:flex-row bg-gray-800 p-4 rounded">
+                  <!-- Image Slider -->
+                  <div class="slider mb-4 lg:w-2/5">
+                      <!-- <img src="https://via.placeholder.com/640x480" class="h-16"  alt="First slide"> -->
+                      <img src="./images/12.avif" class="h-16"  alt="First slide">
+                      <!-- <img src="https://via.placeholder.com/640x480" alt="Second slide" >
+                      <img src="https://via.placeholder.com/640x480" alt="Third slide"> -->
+                  </div>
+
+                  <!-- Ratings and Variations -->
+                  <div class="flex flex-col mb-4 gap-2 px-4 ">
+                      <div class="flex items-center text-5xl">
+                          <span class="text-orange-500">&#9733;&#9733;&#9733;&#9733;</span>
+                          <span class="text-gray-400">&#9734;</span>
+                          <span class="text-2xl ml-2">Rating (145)</span>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                          <div class="text-lg">Variation Available:</div>
+                          <div class="flex flex-wrap items-center space-x-2 gap-2">
+                            <button class="w-10 px-2 py-1 border rounded bg-gray-700 text-sm">S</button>
+                            <button class="w-10 px-2 py-1 border rounded bg-gray-700 text-sm">L</button>
+                            <button class="w-10 px-2 py-1 border rounded bg-gray-700 text-sm">XL</button>
+                            <button class="w-10 px-2 py-1 border rounded bg-gray-700 text-sm">XXL</button>
+                          </div>
+                      </div>
+                                          <!-- Add to Cart Button -->
+                  <a href="./cart.html"><button class="w-full py-2 bg-orange-500 text-white rounded my-4">Add to cart</button></a>
+                <!-- Share Options -->
+                <div class="flex flex-col">
+                  <div class="text-lg">Share this product:</div>
+                  <div class="flex items-center space-x-4">
+                    <a href="#" class="text-blue-500">&#x25B6; Facebook</a>
+                    <a href="#" class="text-sky-500">&#x25B6; Twitter</a>
+                    <a href="#" class="text-pink-500">&#x25B6; Instagram</a>
+                  </div>
+                </div>
+                  </div>
+              </div>
+            </section>
+
+            <!-- Product Details -->
+            <section class="w-full">
+                <div class="bg-gray-800 p-4 rounded mb-4">
+                    <h2 class="text-lg font-semibold mb-2">Product Description</h2>
+                    <table class="w-full text-sm">
+                        <tbody>
+                            <tr>
+                                <td class="text-gray-400 py-1">Key Feature 1</td>
+                                <td class="py-1">Specification 1</td>
+                            </tr>
+                            <tr>
+                                <td class="text-gray-400 py-1">Key Feature 2</td>
+                                <td class="py-1">Specification 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-gray-800 p-4 rounded">
+                    <h2 class="text-lg font-semibold mb-2">Customer Feedback</h2>
+                    <textarea class="w-full h-24 bg-gray-700 rounded text-sm p-2 text-white border border-gray-600" placeholder="Write your feedback here..."></textarea>
+                    <button class="mt-2 px-4 py-2 bg-orange-500 text-white rounded">Submit Feedback</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 mt-8">
+      <div class="w-4/5 mx-auto ">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div>
+              <h3 class="font-semibold mb-2">Need Help?</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">Chat with us</a></li>
+                  <li><a href="#" class="text-gray-400">Help Center</a></li>
+                  <li><a href="#" class="text-gray-400">Contact us</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-2">About Desiwear</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">About us</a></li>
+                  <li><a href="#" class="text-gray-400">Cookie Notice</a></li>
+                  <li><a href="#" class="text-gray-400">Terms and Conditions</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-2">Payment Methods</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">Bitcoin</a></li>
+                  <li><a href="#" class="text-gray-400">Visa/Mastercard</a></li>
+                  <li><a href="#" class="text-gray-400">Cash</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold mb-2">Policies</h3>
+              <ul class="space-y-1 text-sm">
+                  <li><a href="#" class="text-gray-400">Return & Refund Policy</a></li>
+                  <li><a href="#" class="text-gray-400">Privacy Policy</a></li>
+                  <li><a href="#" class="text-gray-400">Dispute Resolution Policy</a></li>
+              </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Follow us</h3>
+            <ul class="space-y-1 text-sm">
+                <li><a href="#" class="text-gray-400">Twitter</a></li>
+                <li><a href="#" class="text-gray-400">Instagram</a></li>
+                <li><a href="#" class="text-gray-400">TikTok</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.slider');
+            if (slider) {
+                $(slider).slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                });
+            }
+        });
+    </script>
+</body>
+</html>
